@@ -2,7 +2,10 @@ package com.github.Pogryziony.Sorting;
 
 public class BubbleSort {
 
-	// z³o¿onoœæ obliczeniowa: O(n^2)
+	// z³o¿onoœæ obliczeniowa czasowa: O(n^2)
+	// z³o¿onoœæ pamiêciowa: O(1)
+	
+	private Integer[] arr;
 	
 	public Integer[] bubbleSort(Integer[] table) {
 		
@@ -15,7 +18,11 @@ public class BubbleSort {
 				}
 			}
 		}
-		return table;
+		arr = table;
+		return arr;
+	}
+	public Integer[] getArr() {
+		return arr;
 	}
 
 	
