@@ -2,17 +2,22 @@ package com.github.Pogryziony.Sorting;
 
 public class BubbleSort {
 
-	public Integer[] bubbleSort(Integer[] a) {
+	// z³o¿onoœæ obliczeniowa: O(n^2)
+	
+	public Integer[] bubbleSort(Integer[] table) {
 		
-		for (int i = 0; i < a.length; i++) {
-			for (int j = 0; j < a.length-1; j++) {
-				if (a[j]>a[j+1]) {
-					int temp = a[j+1];
-					a[j+1]=a[j];
-					a[j]=temp;
+		for (int i = 0; i < table.length; i++) {
+			for (int j = 0; j < table.length-1; j++) {
+				if (table[j]>table[j+1]) {
+					int temp = table[j+1];
+					table[j+1]=table[j];
+					table[j]=temp;
 				}
 			}
 		}
-		return a;
+		return table;
 	}
+
+	
+	
 }
